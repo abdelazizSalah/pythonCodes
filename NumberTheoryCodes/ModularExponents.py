@@ -64,6 +64,7 @@ print(fastModularExponentiationusingPowOf2(
 def fastModularExponentiationusingFermatTheorm(b, e, n):
     # i know that a pow (n - 1) is congurant to 1 so we want to evaluate
     # so we want to compute the e module n - 1
+
     newExponent = e % (n - 1)
 
     # after that we need to compute the modular exponent using the newExponent
@@ -94,3 +95,27 @@ print(isPrime(4, 91))  # woooooow !!! -> prime
 # but if the result is false then it implies for sure that the e is NOT A PRIME.
 print(isPrime(2, 117))  # woooooow !!! -> not prime
 print(isPrime(2, 9))  # woooooow !!! -> not prime
+
+
+#################
+# answers for the sheet problems
+#################
+
+# 1- a) compute the result of  7  pow (644) mod (645)
+print(fastModularExponentiationusingPowOf2(7, 644, 645))
+
+# 1- b) compute the result of  11  pow (644) mod (645)
+print(fastModularExponentiationusingPowOf2(11, 644, 645))
+
+# 1- c) compute the result of  3  pow (2003) mod (99)
+print(fastModularExponentiationusingPowOf2(3, 2003, 99))
+
+# 1- d) compute the result of  123  pow (1001) mod (101)
+print(fastModularExponentiationusingPowOf2(123, 1001, 101))
+
+
+# 5 use fermat to find 7 pow (121) mod 13
+print(fastModularExponentiationusingFermatTheorm(7, 121, 13))
+
+# 6) use fermat to find 23 pow (1002) mod 41
+print(fastModularExponentiationusingFermatTheorm(23, 1002, 41))
