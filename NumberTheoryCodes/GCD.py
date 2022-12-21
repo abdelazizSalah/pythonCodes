@@ -13,7 +13,7 @@ def NaiveAlgorithmGCD(a, b):
 
 # the idea is here, for such large numbers this algorithm will take very long time to compute the result, it will
 # compute it right, but it is very simple so it is very slow.
-# print(NaiveAlgorithmGCD(54320543590223053250, 1453234276239426509362))
+print(NaiveAlgorithmGCD(54320543590223053250, 1453234276239426509362))
 
 
 # 2- Euclid's algorithms is depending on his lemma which says:
@@ -37,12 +37,12 @@ def betterVersionOfNaiveGCD(a, b):
 
 
 # here if used the same example as before we will find that it has computed it faster, but still it is slow
-# print(betterVersionOfNaiveGCD(54320543590223053250, 1453234276239426509362))
+print(betterVersionOfNaiveGCD(54320543590223053250, 1453234276239426509362))
 
 # but if used example like this we will find that it has a very bad complexity,
 # and as the difference between a and b decreses,
 # the complexity will increase
-# print(betterVersionOfNaiveGCD(54320543590223053250, 7))
+print(betterVersionOfNaiveGCD(54320543590223053250, 7))
 
 
 # so we tried to avoid subtraction and go for better analysis which depends on the division
@@ -90,7 +90,7 @@ def extended_gcd(a, b):
     assert a >= b and b >= 0 and a+b > 0
 
 
-# print(extended_gcd(391, 299))
+print(extended_gcd(391, 299))
 
 
 # now lets try the lcm which is the least common multiplier
@@ -107,7 +107,7 @@ def naiveLCM(a, b):
 print(naiveLCM(12, 26))
 
 # a better way to compute the lcm is through the gcd by this equation
-# lcm(a,b) = (a*b)/ gcd(a,b)
+# lcm(a, b) = (a*b) / gcd(a, b)
 
 
 def LCMUsingGCD(x, y):

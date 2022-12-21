@@ -30,3 +30,6 @@ print(fruits)
 # change variables in certain postion
 fruits[0] = 'Banana'
 print(fruits)
+
+
+# how to create 2d array
